@@ -46,6 +46,9 @@
                 table += `<div class=\'col-1\''>UserName</div>`;
                 table += `<div class=\'col-1\''>Email</div>`;
                 table += `<div class=\'col-2\''>Address</div>`;
+                table += `<div class=\'col-2\''>Address</div>`;
+                table += `<div class=\'col-2\''>Address</div>`;
+                table += `<div class=\'col-2\''>Address</div>`;
                 table += `<div class=\'col-2''>Telephone</div>`;
                 table += `<div class=\'col-1\''>Website</div>`;
                 table += `<div class=\'col-1\''>Company</div>`;
@@ -58,9 +61,17 @@
                         for (const key in my_row) {
                             table+=`<div class=\'col\''>${my_row[key]}</div>`;
                         }
+
+                        // experiment
+                        for (const key in my_row.address) {
+                            table+=`<div class=\'col\''>${my_row.address[key]}</div>`;
+                        }
+                        // end experiment
+
                     table += '</div>';
-                    table += '<button type="button" class="btn-sm btn-primary col-1">Szerkesztés</button>';
-                    table += '<button type="button" class="btn-sm btn-success col-1">Törlés</button>';
+
+                    // table += '<button type="button" class="btn-sm btn-primary col-1">Szerkesztés</button>';
+                    // table += '<button type="button" class="btn-sm btn-success col-1">Törlés</button>';
 
                 });
                 
